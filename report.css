@@ -1,0 +1,33 @@
+body
+{
+	background-color:white;
+}
+h1,h3 
+{
+    text-align: center;
+}    
+table 
+{
+    width: 60%;
+    margin: auto;
+    border-collapse: collapse;
+	border-spacing:0px;
+    font-size: 100%;
+}    
+td 
+{
+	text-align:center;
+    border: 1px solid black;
+	font-family: "Trebuchet MS";
+    padding: 5px;
+}
+#pic
+{
+	margin:auto;
+	display:block;
+	width:30%;
+}
+tr:nth-child(even) 
+{
+    background-color: #EBEBEB;
+}

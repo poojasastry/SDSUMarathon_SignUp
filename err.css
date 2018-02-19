@@ -1,0 +1,16 @@
+body
+{
+	background-image: url(Images/im1.jpg);
+	background-size:cover;
+	z-index:1;
+	min-height: 100%;
+}
+h2,h3
+{
+	width:50%;
+	margin:auto;
+	text-align:center;
+	font-family: "Trebuchet MS";
+	opacity:0.9;
+	background-color:white;
+}

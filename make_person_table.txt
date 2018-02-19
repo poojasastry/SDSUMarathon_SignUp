@@ -1,0 +1,25 @@
+use jadrn042;
+
+drop table if exists person;
+
+create table person(
+    id int AUTO_INCREMENT PRIMARY KEY,
+    firstname varchar(50) NOT NULL,
+    middlename varchar(50),
+    lastname varchar(50) NOT NULL,
+    address1 varchar(100) NOT NULL,
+    address2 varchar(100),
+    city varchar(30) NOT NULL,
+    state char(2) NOT NULL,
+    zip char(5) NOT NULL,
+    gender varchar(6) NOT NULL,
+    telephone varchar(15) NOT NULL,
+    email varchar(50) NOT NULL,
+	dob varchar(10) NOT NULL,
+	experience varchar(20) NOT NULL,
+	imagepath varchar(150) NOT NULL,
+    category varchar(20),
+    medical varchar(150) 
+    );
+
+    

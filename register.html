@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<!--	register.html
+		Required: register.css,register.js
+		Pooja Sastry, CS545, Fall 2016
+-->
+
+<head>
+
+	<title>
+			SDSU Marathon Sign Up! 
+	</title>
+	
+	<meta http-equiv="content-type" 
+		content="text/html;charset=utf-8" />
+		
+	<link rel="stylesheet" type="text/css" href="register.css">
+	
+	<script type="text/javascript" src="/jquery/jquery.js"></script> 
+	
+	<script type="text/javascript" src="register.js"></script>
+	<script type="text/javascript" src="dup.js"></script>
+
+</head>
+
+<body>
+
+	<form  name="customer" method="post" action="process_request.php" enctype="multipart/form-data">
+
+		<h3> Please enter your information: </h3><br>
+
+		<label> *Name</label> 
+			<input type="text" name="firstname" size="25" placeholder="First Name" required autofocus />
+			<input type="text" name="middlename" size="25" placeholder="Middle Name (optional)" />
+			<input type="text" name="lastname" size="25" placeholder="Last Name" required /><br>
+
+		<label>*Address </label> 
+			<input type="text" name="address1" size="35" placeholder="Address 1" required/>
+			<input type="text" name="address2" size="30" placeholder="Address 2 (optional)" /><br>
+		
+		<label> *City </label>
+			<input type="text" name="city" size="25" placeholder="City" required>
+			<b>*State</b> <input type="text" name="state" maxlength="2" size="4" value="CA" id="state" required />
+			<b>*Zip</b> <input type="text" name="zip" maxlength="5" size="6" placeholder="Zipcode" required /><br>
+		
+		<label> *Gender </label>
+			<input type="radio" name="gender" value="Male" required /> Male
+			<input type="radio" name="gender" value="Female" required /> Female<br>
+
+		<label> *Telephone </label> 
+			<input type="text" name="areaphone" size="3" maxlength="3" placeholder="XXX" required />-<input type="text" name="prefixphone" size="3" maxlength="3" placeholder="XXX" required />-<input type="text" size="3" maxlength="4" placeholder="XXXX" name="phone" required /><br>
+
+		<label> *Email ID </label>
+			<input type="email" name="email" size="25" placeholder="xyz@abc.com" id="email" required /><br>
+
+		<label> *Date Of Birth </label> 
+			<input type="date" name="dob" placeholder="MM/DD/YYYY" pattern="\d{1,2}/\d{1,2}/\d{4}" required /><br>
+		
+		<label> *Experience </label>
+			<input type="radio" name="experience" value="Novice" required/> Novice
+			<input type="radio" name="experience" value="Experienced" required/> Experienced
+			<input type="radio" name="experience" value="Expert" required/> Expert <br>
+			
+		<label> *Photo Upload </label>
+			<input type="file" name="file" id="pic" /><br>
+
+		<label> *Category </label>
+			<input type="radio" name="category" value="Teen" required/> Teen
+			<input type="radio" name="category" value="Adult" required/> Adult
+			<input type="radio" name="category" value="Senior" required/> Senior <br>
+		
+		<label> Medical Conditions </label> 
+			<textarea name="medical" rows="3" cols="30" placeholder="Please enter your medical issues here, if any."></textarea><br>
+
+		<div id="message_line">&nbsp;</div>
+		
+		<div id="button_panel">
+			<input type="reset" value="Clear"> 
+			<input type="submit" value="Sign Up"> 
+		</div>
+	
+	</form>
+
+</body>
+
+</html>
